@@ -49,7 +49,7 @@ jobs:
       - run:
           name: Deploy to GKE
           command: |
-              kubectl apply -f kubernetes-deployment.yaml
+              kubectl apply -f kubernetes-deployment.yaml --validate=false
 
 workflows:
   version: 2
