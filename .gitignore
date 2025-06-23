@@ -1,3 +1,4 @@
 .env
 venv/
 LLMOPS_7.egg-info/
+gcp-key.json
