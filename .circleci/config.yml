@@ -50,7 +50,7 @@ jobs:
           name: Deploy to GKE
           command: |
               kubectl apply -f kubernetes-deployment.yaml --validate=false
-              
+              kubectl rollout restart deployment llmops-app
 
 workflows:
   version: 2
